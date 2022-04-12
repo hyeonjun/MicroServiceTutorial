@@ -1,4 +1,4 @@
-package com.javetech.ps.api;
+package com.javatech.cloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCircuitBreaker
-public class PaymentServiceApplication {
+public class CloudGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PaymentServiceApplication.class, args);
+        SpringApplication.run(CloudGatewayApplication.class, args);
     }
 
 }

@@ -1,5 +1,4 @@
 # MicroServiceTutorial
-MicroService
 
 ### tutorial_2nd
 

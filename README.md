@@ -21,3 +21,12 @@
 
 * Centralize Tracing in MicroService Architecture -> Zipkin & Sleuth
 ![image](https://user-images.githubusercontent.com/7258995/163204108-c1a44abb-f55d-420f-8474-cf14736b28ca.png)
+
+
+* result
+
+![image](https://user-images.githubusercontent.com/7258995/163204636-05663537-0c89-4ef4-9092-54563345f0f6.png)
+
+
+
+![image](https://user-images.githubusercontent.com/7258995/163204693-971f8698-f30a-404a-8d6a-de682e869fae.png)

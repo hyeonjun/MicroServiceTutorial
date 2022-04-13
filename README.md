@@ -1,7 +1,7 @@
 # MicroServiceTutorial
 MicroService
 
-### tutorial_2nc
+### tutorial_2nd
 
 * Eurek Service Discovery
 ![image](https://user-images.githubusercontent.com/7258995/163204198-2ee7c47b-d73c-46cc-8df5-e2bbc6d98cc3.png)

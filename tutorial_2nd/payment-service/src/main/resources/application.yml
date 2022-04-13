@@ -1,6 +1,8 @@
 server:
   port: 9191
 spring:
+  zipkin:
+    base-url: http://localhost:9411/
   h2:
     console:
       enabled: true
@@ -8,3 +10,6 @@ spring:
     name: PAYMENT-SERVICE
   datasource:
     url: jdbc:h2:mem:testdb
+logging:
+  file:
+    name: C:/Users/wngus/Desktop/SpringBoot_MicroService/MicroServiceTutorial/tutorial_2nd/logs/microservice.log

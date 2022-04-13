@@ -1,0 +1,931 @@
+2022-04-13 20:34:39.044  INFO 34908 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-04-13 20:34:39.050  INFO 34908 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:9196. Will be trying the next url if available
+2022-04-13 20:34:39.050  WARN 34908 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:9196/ORDER-SERVICE/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-04-13 20:34:39.053  INFO 34908 --- [main] c.j.os.api.OrderServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-13 20:34:39.072  INFO 34908 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:9196
+2022-04-13 20:34:39.072  INFO 34908 --- [main] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:9196. Will be trying the next url if available
+2022-04-13 20:34:39.072  WARN 34908 --- [main] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@4e2916c3 uris = array<String>['http://localhost:9196'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:9196/ORDER-SERVICE/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-04-13 20:34:39.797  INFO 34908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-13 20:34:39.922  INFO 34908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 1 JPA repository interfaces.
+2022-04-13 20:34:40.294  INFO 34908 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=93f44626-4a30-3213-8b79-3047ee549f0d
+2022-04-13 20:34:41.246  INFO 34908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9192 (http)
+2022-04-13 20:34:41.265  INFO 34908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 20:34:41.267  INFO 34908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-13 20:34:41.605  INFO 34908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 20:34:41.606  INFO 34908 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2533 ms
+2022-04-13 20:34:41.674  INFO 34908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 20:34:41.874  INFO 34908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 20:34:41.892  INFO 34908 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-04-13 20:34:42.179  INFO 34908 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-13 20:34:42.273  INFO 34908 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-13 20:34:42.626  INFO 34908 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-13 20:34:42.869  INFO 34908 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-13 20:34:43.534  INFO 34908 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-13 20:34:43.544  INFO 34908 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 20:34:43.625  WARN 34908 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 20:34:43.626  INFO 34908 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 20:34:43.634  WARN 34908 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 20:34:43.634  INFO 34908 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 20:34:43.692  WARN 34908 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-13 20:34:45.243  INFO 34908 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-04-13 20:34:46.171  WARN 34908 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-04-13 20:34:46.256  INFO 34908 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-04-13 20:34:46.311  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-04-13 20:34:46.315  INFO 34908 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:34:46.347  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-04-13 20:34:46.347  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-04-13 20:34:46.347  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-04-13 20:34:46.348  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-04-13 20:34:46.348  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-04-13 20:34:46.348  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-04-13 20:34:46.348  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-04-13 20:34:46.616  INFO 34908 --- [main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$a94bf82b.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.javatech.os.api.OrderServiceApplication.main(OrderServiceApplication.java:17)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 68 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 81 more
+
+2022-04-13 20:34:46.617  WARN 34908 --- [main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-04-13 20:34:46.618  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$a94bf82b.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.javatech.os.api.OrderServiceApplication.main(OrderServiceApplication.java:17)
+
+2022-04-13 20:34:46.619  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from primary servers failed
+2022-04-13 20:34:46.619  WARN 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2022-04-13 20:34:46.620  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from backup servers failed
+2022-04-13 20:34:46.625  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-04-13 20:34:46.631  INFO 34908 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-13 20:34:46.643  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1649849686642 with initial instances count: 0
+2022-04-13 20:34:46.646  INFO 34908 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2022-04-13 20:34:46.647  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649849686647, current=UP, previous=STARTING]
+2022-04-13 20:34:46.649  INFO 34908 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192: registering service...
+2022-04-13 20:34:46.676  INFO 34908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9192 (http) with context path ''
+2022-04-13 20:34:46.678  INFO 34908 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9192
+2022-04-13 20:34:46.706  INFO 34908 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/ORDER-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/ORDER-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2022-04-13 20:34:46.707  WARN 34908 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/ORDER-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-04-13 20:34:46.712  WARN 34908 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-04-13 20:34:46.713  WARN 34908 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-04-13 20:34:47.603  WARN 34908 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'microservice.payment-service.endpoints.endpoint.uri' in value "${microservice.payment-service.endpoints.endpoint.uri}"
+2022-04-13 20:34:47.622  WARN 34908 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 20:34:47.622  INFO 34908 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 20:34:47.625  INFO 34908 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 20:34:47.625  INFO 34908 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-13 20:34:47.630  INFO 34908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-13 20:34:47.632  INFO 34908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-13 20:34:47.633  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-04-13 20:34:50.645  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-04-13 20:34:50.769  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - deregister  status: 404
+2022-04-13 20:34:50.824  INFO 34908 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-04-13 20:34:50.876  INFO 34908 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-13 20:34:50.895  INFO 34908 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-13 20:34:50.924 ERROR 34908 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'microservice.payment-service.endpoints.endpoint.uri' in value "${microservice.payment-service.endpoints.endpoint.uri}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.eagerlyInitialize(RefreshScope.java:125) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.start(RefreshScope.java:117) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.onApplicationEvent(RefreshScope.java:112) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.onApplicationEvent(RefreshScope.java:67) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
+	at com.javatech.os.api.OrderServiceApplication.main(OrderServiceApplication.java:17) ~[classes/:na]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'microservice.payment-service.endpoints.endpoint.uri' in value "${microservice.payment-service.endpoints.endpoint.uri}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 27 common frames omitted
+
+2022-04-13 20:35:01.542  INFO 37892 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-04-13 20:35:01.547  INFO 37892 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:9196. Will be trying the next url if available
+2022-04-13 20:35:01.547  WARN 37892 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:9196/ORDER-SERVICE/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-04-13 20:35:01.550  INFO 37892 --- [main] c.j.os.api.OrderServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-13 20:35:01.565  INFO 37892 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:9196
+2022-04-13 20:35:01.565  INFO 37892 --- [main] o.s.b.context.config.ConfigDataLoader    : Connect Timeout Exception on Url - http://localhost:9196. Will be trying the next url if available
+2022-04-13 20:35:01.565  WARN 37892 --- [main] o.s.b.context.config.ConfigDataLoader    : Could not locate PropertySource ([ConfigServerConfigDataResource@63718b93 uris = array<String>['http://localhost:9196'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:9196/ORDER-SERVICE/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-04-13 20:35:02.138  INFO 37892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-13 20:35:02.228  INFO 37892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interfaces.
+2022-04-13 20:35:02.475  INFO 37892 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=93f44626-4a30-3213-8b79-3047ee549f0d
+2022-04-13 20:35:02.978  INFO 37892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9192 (http)
+2022-04-13 20:35:02.988  INFO 37892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 20:35:02.990  INFO 37892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-13 20:35:03.237  INFO 37892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 20:35:03.238  INFO 37892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1672 ms
+2022-04-13 20:35:03.285  INFO 37892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 20:35:03.416  INFO 37892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 20:35:03.429  INFO 37892 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-04-13 20:35:03.607  INFO 37892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-13 20:35:03.672  INFO 37892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-13 20:35:03.846  INFO 37892 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-13 20:35:03.963  INFO 37892 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-13 20:35:04.524  INFO 37892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-13 20:35:04.533  INFO 37892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 20:35:04.609  WARN 37892 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 20:35:04.609  INFO 37892 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 20:35:04.614  WARN 37892 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 20:35:04.615  INFO 37892 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 20:35:04.678  WARN 37892 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-13 20:35:06.096  INFO 37892 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-04-13 20:35:07.016  WARN 37892 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-04-13 20:35:07.090  INFO 37892 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-04-13 20:35:07.146  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-04-13 20:35:07.149  INFO 37892 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:35:07.183  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-04-13 20:35:07.184  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-04-13 20:35:07.184  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-04-13 20:35:07.184  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-04-13 20:35:07.184  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-04-13 20:35:07.185  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-04-13 20:35:07.185  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-04-13 20:35:07.504  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-04-13 20:35:07.510  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-04-13 20:35:07.516  INFO 37892 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-13 20:35:07.528  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1649849707527 with initial instances count: 0
+2022-04-13 20:35:07.530  INFO 37892 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2022-04-13 20:35:07.531  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649849707531, current=UP, previous=STARTING]
+2022-04-13 20:35:07.533  INFO 37892 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192: registering service...
+2022-04-13 20:35:07.559  INFO 37892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9192 (http) with context path ''
+2022-04-13 20:35:07.560  INFO 37892 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9192
+2022-04-13 20:35:07.667  INFO 37892 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - registration status: 204
+2022-04-13 20:35:08.335  WARN 37892 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'microservice.payment-service.endpoints.endpoint.uri' in value "${microservice.payment-service.endpoints.endpoint.uri}"
+2022-04-13 20:35:08.351  WARN 37892 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 20:35:08.352  INFO 37892 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 20:35:08.354  INFO 37892 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 20:35:08.354  INFO 37892 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-13 20:35:08.359  INFO 37892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-13 20:35:08.361  INFO 37892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-13 20:35:08.361  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-04-13 20:35:11.372  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-04-13 20:35:11.379  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - deregister  status: 200
+2022-04-13 20:35:11.430  INFO 37892 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-04-13 20:35:11.481  INFO 37892 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-13 20:35:11.494  INFO 37892 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-13 20:35:11.520 ERROR 37892 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.orderService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'microservice.payment-service.endpoints.endpoint.uri' in value "${microservice.payment-service.endpoints.endpoint.uri}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.eagerlyInitialize(RefreshScope.java:125) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.start(RefreshScope.java:117) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.onApplicationEvent(RefreshScope.java:112) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.onApplicationEvent(RefreshScope.java:67) ~[spring-cloud-context-3.1.1.jar:3.1.1]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
+	at com.javatech.os.api.OrderServiceApplication.main(OrderServiceApplication.java:17) ~[classes/:na]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'microservice.payment-service.endpoints.endpoint.uri' in value "${microservice.payment-service.endpoints.endpoint.uri}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 27 common frames omitted
+
+2022-04-13 20:36:38.530  INFO 40760 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-04-13 20:36:39.160  INFO 40760 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 20:36:39.162  INFO 40760 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/hyeonjun/cloud-config-server/file:C:\Users\wngus\AppData\Local\Temp\config-repo-8008916077673108299\application.yml'}]
+2022-04-13 20:36:39.179  INFO 40760 --- [main] c.j.os.api.OrderServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-13 20:36:39.200  INFO 40760 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:9196
+2022-04-13 20:36:39.200  INFO 40760 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 20:36:39.763  INFO 40760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-13 20:36:39.839  INFO 40760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interfaces.
+2022-04-13 20:36:40.098  INFO 40760 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=93f44626-4a30-3213-8b79-3047ee549f0d
+2022-04-13 20:36:40.603  INFO 40760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9192 (http)
+2022-04-13 20:36:40.613  INFO 40760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 20:36:40.614  INFO 40760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-13 20:36:40.839  INFO 40760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 20:36:40.840  INFO 40760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1640 ms
+2022-04-13 20:36:40.878  INFO 40760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 20:36:40.993  INFO 40760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 20:36:41.002  INFO 40760 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-04-13 20:36:41.166  INFO 40760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-13 20:36:41.217  INFO 40760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-13 20:36:41.365  INFO 40760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-13 20:36:41.485  INFO 40760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-13 20:36:42.043  INFO 40760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-13 20:36:42.053  INFO 40760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 20:36:42.129  WARN 40760 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 20:36:42.130  INFO 40760 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 20:36:42.134  WARN 40760 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 20:36:42.134  INFO 40760 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 20:36:42.205  WARN 40760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-13 20:36:43.606  INFO 40760 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-04-13 20:36:44.496  WARN 40760 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-04-13 20:36:44.569  INFO 40760 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-04-13 20:36:44.619  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-04-13 20:36:44.623  INFO 40760 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:36:44.654  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-04-13 20:36:44.654  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-04-13 20:36:44.654  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-04-13 20:36:44.655  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-04-13 20:36:44.655  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-04-13 20:36:44.655  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-04-13 20:36:44.655  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-04-13 20:36:44.931  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-04-13 20:36:44.938  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-04-13 20:36:44.945  INFO 40760 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-13 20:36:44.959  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1649849804958 with initial instances count: 2
+2022-04-13 20:36:44.962  INFO 40760 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2022-04-13 20:36:44.963  INFO 40760 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649849804963, current=UP, previous=STARTING]
+2022-04-13 20:36:44.966  INFO 40760 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192: registering service...
+2022-04-13 20:36:44.997  INFO 40760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9192 (http) with context path ''
+2022-04-13 20:36:44.998  INFO 40760 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9192
+2022-04-13 20:36:45.022  INFO 40760 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - registration status: 204
+2022-04-13 20:36:45.803  INFO 40760 --- [main] c.j.os.api.OrderServiceApplication       : Started OrderServiceApplication in 11.382 seconds (JVM running for 12.867)
+2022-04-13 20:37:04.857  INFO 28364 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-04-13 20:37:05.492  INFO 28364 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=PAYMENT-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 20:37:05.493  INFO 28364 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/hyeonjun/cloud-config-server/file:C:\Users\wngus\AppData\Local\Temp\config-repo-8008916077673108299\application.yml'}]
+2022-04-13 20:37:05.509  INFO 28364 --- [main] c.j.ps.api.PaymentServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-13 20:37:05.528  INFO 28364 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:9196
+2022-04-13 20:37:05.528  INFO 28364 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=PAYMENT-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 20:37:06.186  INFO 28364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-13 20:37:06.271  INFO 28364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
+2022-04-13 20:37:06.533  INFO 28364 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=914e6d7c-a0da-3844-9c5b-d5e10b848737
+2022-04-13 20:37:07.067  INFO 28364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2022-04-13 20:37:07.077  INFO 28364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 20:37:07.078  INFO 28364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-13 20:37:07.314  INFO 28364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 20:37:07.315  INFO 28364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1786 ms
+2022-04-13 20:37:07.351  INFO 28364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 20:37:07.485  INFO 28364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 20:37:07.499  INFO 28364 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-04-13 20:37:07.678  INFO 28364 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-13 20:37:07.731  INFO 28364 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-13 20:37:07.891  INFO 28364 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-13 20:37:08.018  INFO 28364 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-13 20:37:08.625  INFO 28364 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-13 20:37:08.634  INFO 28364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 20:37:08.987  WARN 28364 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 20:37:08.988  INFO 28364 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 20:37:08.995  WARN 28364 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 20:37:08.996  INFO 28364 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 20:37:09.070  WARN 28364 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-13 20:37:10.292  INFO 28364 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-04-13 20:37:11.185  WARN 28364 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-04-13 20:37:11.295  INFO 28364 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-04-13 20:37:11.351  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-04-13 20:37:11.356  INFO 28364 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:37:11.386  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-04-13 20:37:11.386  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-04-13 20:37:11.386  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-04-13 20:37:11.386  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-04-13 20:37:11.387  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-04-13 20:37:11.387  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-04-13 20:37:11.387  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-04-13 20:37:11.651  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-04-13 20:37:11.658  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-04-13 20:37:11.665  INFO 28364 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-13 20:37:11.680  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1649849831679 with initial instances count: 3
+2022-04-13 20:37:11.684  INFO 28364 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2022-04-13 20:37:11.685  INFO 28364 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649849831685, current=UP, previous=STARTING]
+2022-04-13 20:37:11.686  INFO 28364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191: registering service...
+2022-04-13 20:37:11.715  INFO 28364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2022-04-13 20:37:11.716  INFO 28364 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2022-04-13 20:37:11.739  INFO 28364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191 - registration status: 204
+2022-04-13 20:37:12.456  INFO 28364 --- [main] c.j.ps.api.PaymentServiceApplication     : Started PaymentServiceApplication in 12.033 seconds (JVM running for 14.237)
+2022-04-13 20:41:44.673  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:42:11.401  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:46:44.684  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:47:11.413  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:51:44.689  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:52:11.428  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:56:44.691  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 20:57:11.441  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:01:44.698  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:02:11.456  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:06:44.704  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:07:11.466  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:11:44.716  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:12:11.472  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:16:44.726  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:17:11.480  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:21:44.741  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:22:11.483  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:26:44.753  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:27:11.488  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:31:44.760  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:32:11.497  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:36:44.768  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:37:11.503  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:41:44.778  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:42:11.518  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:46:44.790  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:47:11.526  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:51:44.805  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:52:11.538  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:56:44.807  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 21:57:11.545  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:01:44.822  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:02:11.547  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:06:44.835  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:07:11.557  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:11:44.842  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:12:11.570  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:16:44.850  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:17:11.577  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:21:44.865  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:22:11.588  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:26:44.877  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:27:11.595  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:31:44.897  INFO 40760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:32:11.599  INFO 28364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:33:49.294  INFO 40760 --- [http-nio-9192-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:33:49.296  INFO 40760 --- [http-nio-9192-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:33:49.373  INFO 40760 --- [http-nio-9192-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 75 ms
+2022-04-13 22:33:49.927  INFO 40760 --- [http-nio-9192-exec-1] c.javatech.os.api.service.OrderService   : Order Service Request: {"order":{"id":1,"name":"book","qty":3,"price":1000.0},"payment":{"paymentId":null,"paymentStatus":null,"transactionId":null,"amount":1000.0,"orderId":1}}
+2022-04-13 22:33:50.536  INFO 28364 --- [http-nio-9191-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:33:50.537  INFO 28364 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:33:50.604  INFO 28364 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 65 ms
+2022-04-13 22:33:50.798  INFO 28364 --- [http-nio-9191-exec-1] c.j.ps.api.service.PaymentService        : Boolean is true
+2022-04-13 22:33:50.813  INFO 28364 --- [http-nio-9191-exec-1] c.j.ps.api.service.PaymentService        : Payment Service Request: {"paymentId":null,"paymentStatus":"success","transactionId":"010952e1-587e-42a2-a6ba-dafc4736d87b","orderId":1,"amount":1000.0}
+2022-04-13 22:33:51.094  INFO 40760 --- [http-nio-9192-exec-1] c.javatech.os.api.service.OrderService   : Payment Service Response from Order Service Rest Call: ""
+2022-04-13 22:34:38.275  INFO 40760 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-SERVICE with eureka with status DOWN
+2022-04-13 22:34:38.276  INFO 40760 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649856878276, current=DOWN, previous=UP]
+2022-04-13 22:34:38.277  INFO 40760 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192: registering service...
+2022-04-13 22:34:38.303  INFO 40760 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - registration status: 204
+2022-04-13 22:34:38.414  WARN 40760 --- [SpringApplicationShutdownHook] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 22:34:38.414  INFO 40760 --- [SpringApplicationShutdownHook] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 22:34:38.419  INFO 40760 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 22:34:38.423  INFO 40760 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-13 22:34:38.451  INFO 40760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-13 22:34:38.457  INFO 40760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-13 22:34:38.458  INFO 40760 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-04-13 22:34:41.473  INFO 40760 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-04-13 22:34:41.479  INFO 40760 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - deregister  status: 200
+2022-04-13 22:34:41.551  INFO 40760 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-04-13 22:34:53.856  INFO 28364 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2022-04-13 22:34:53.857  INFO 28364 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649856893857, current=DOWN, previous=UP]
+2022-04-13 22:34:53.857  INFO 28364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191: registering service...
+2022-04-13 22:34:53.866  INFO 28364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191 - registration status: 204
+2022-04-13 22:34:53.989  WARN 28364 --- [SpringApplicationShutdownHook] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 22:34:53.991  INFO 28364 --- [SpringApplicationShutdownHook] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 22:34:54.002  INFO 28364 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 22:34:54.006  INFO 28364 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-13 22:34:54.033  INFO 28364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-13 22:34:54.037  INFO 28364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-13 22:34:54.038  INFO 28364 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-04-13 22:34:54.214  INFO 20456 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-04-13 22:34:54.887  INFO 20456 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 22:34:54.888  INFO 20456 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/hyeonjun/cloud-config-server/file:C:\Users\wngus\AppData\Local\Temp\config-repo-8008916077673108299\application.yml'}]
+2022-04-13 22:34:54.903  INFO 20456 --- [main] c.j.os.api.OrderServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-13 22:34:54.919  INFO 20456 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:9196
+2022-04-13 22:34:54.919  INFO 20456 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 22:34:55.554  INFO 20456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-13 22:34:55.644  INFO 20456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interfaces.
+2022-04-13 22:34:55.888  INFO 20456 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=93f44626-4a30-3213-8b79-3047ee549f0d
+2022-04-13 22:34:56.467  INFO 20456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9192 (http)
+2022-04-13 22:34:56.479  INFO 20456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:34:56.479  INFO 20456 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-13 22:34:56.693  INFO 20456 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:34:56.693  INFO 20456 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1774 ms
+2022-04-13 22:34:56.727  INFO 20456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:34:56.865  INFO 20456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:34:56.877  INFO 20456 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-04-13 22:34:57.057  INFO 28364 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-04-13 22:34:57.063  INFO 28364 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191 - deregister  status: 200
+2022-04-13 22:34:57.078  INFO 20456 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-13 22:34:57.119  INFO 28364 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-04-13 22:34:57.151  INFO 20456 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-13 22:34:57.365  INFO 20456 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-13 22:34:57.503  INFO 20456 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-13 22:34:58.271  INFO 20456 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-13 22:34:58.282  INFO 20456 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 22:34:58.379  WARN 20456 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 22:34:58.380  INFO 20456 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 22:34:58.387  WARN 20456 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 22:34:58.387  INFO 20456 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 22:34:58.476  WARN 20456 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-13 22:35:00.532  INFO 20456 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-04-13 22:35:01.783  WARN 20456 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-04-13 22:35:01.885  INFO 20456 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-04-13 22:35:01.949  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-04-13 22:35:01.955  INFO 20456 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:35:01.990  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-04-13 22:35:01.990  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-04-13 22:35:01.991  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-04-13 22:35:01.991  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-04-13 22:35:01.991  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-04-13 22:35:01.991  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-04-13 22:35:01.991  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-04-13 22:35:02.341  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-04-13 22:35:02.349  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-04-13 22:35:02.356  INFO 20456 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-13 22:35:02.373  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1649856902371 with initial instances count: 4
+2022-04-13 22:35:02.375  INFO 20456 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2022-04-13 22:35:02.376  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649856902376, current=UP, previous=STARTING]
+2022-04-13 22:35:02.378  INFO 20456 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192: registering service...
+2022-04-13 22:35:02.412  INFO 20456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9192 (http) with context path ''
+2022-04-13 22:35:02.413  INFO 20456 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9192
+2022-04-13 22:35:02.439  INFO 20456 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - registration status: 204
+2022-04-13 22:35:03.337  INFO 20456 --- [main] c.j.os.api.OrderServiceApplication       : Started OrderServiceApplication in 14.415 seconds (JVM running for 16.09)
+2022-04-13 22:35:05.773  INFO 27276 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-04-13 22:35:06.408  INFO 27276 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=PAYMENT-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 22:35:06.409  INFO 27276 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/hyeonjun/cloud-config-server/file:C:\Users\wngus\AppData\Local\Temp\config-repo-8008916077673108299\application.yml'}]
+2022-04-13 22:35:06.423  INFO 27276 --- [main] c.j.ps.api.PaymentServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-13 22:35:06.438  INFO 27276 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:9196
+2022-04-13 22:35:06.439  INFO 27276 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=PAYMENT-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 22:35:06.980  INFO 27276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-13 22:35:07.061  INFO 27276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2022-04-13 22:35:07.320  INFO 27276 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=914e6d7c-a0da-3844-9c5b-d5e10b848737
+2022-04-13 22:35:07.823  INFO 27276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2022-04-13 22:35:07.832  INFO 27276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 22:35:07.833  INFO 27276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-13 22:35:08.057  INFO 27276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 22:35:08.058  INFO 27276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1619 ms
+2022-04-13 22:35:08.094  INFO 27276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 22:35:08.210  INFO 27276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 22:35:08.220  INFO 27276 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-04-13 22:35:08.418  INFO 27276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-13 22:35:08.472  INFO 27276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-13 22:35:08.629  INFO 27276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-13 22:35:08.747  INFO 27276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-13 22:35:09.297  INFO 27276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-13 22:35:09.308  INFO 27276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 22:35:09.674  WARN 27276 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 22:35:09.674  INFO 27276 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 22:35:09.679  WARN 27276 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 22:35:09.679  INFO 27276 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 22:35:09.733  WARN 27276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-13 22:35:11.012  INFO 27276 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-04-13 22:35:11.970  WARN 27276 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-04-13 22:35:12.048  INFO 27276 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-04-13 22:35:12.104  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-04-13 22:35:12.109  INFO 27276 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:35:12.144  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-04-13 22:35:12.144  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-04-13 22:35:12.144  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-04-13 22:35:12.144  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-04-13 22:35:12.145  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-04-13 22:35:12.146  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-04-13 22:35:12.146  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-04-13 22:35:12.544  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-04-13 22:35:12.550  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-04-13 22:35:12.556  INFO 27276 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-13 22:35:12.568  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1649856912567 with initial instances count: 2
+2022-04-13 22:35:12.571  INFO 27276 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2022-04-13 22:35:12.572  INFO 27276 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649856912572, current=UP, previous=STARTING]
+2022-04-13 22:35:12.575  INFO 27276 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191: registering service...
+2022-04-13 22:35:12.604  INFO 27276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2022-04-13 22:35:12.605  INFO 27276 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2022-04-13 22:35:12.631  INFO 27276 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191 - registration status: 204
+2022-04-13 22:35:13.453  INFO 27276 --- [main] c.j.ps.api.PaymentServiceApplication     : Started PaymentServiceApplication in 12.049 seconds (JVM running for 13.505)
+2022-04-13 22:36:07.841  INFO 20456 --- [http-nio-9192-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:36:07.841  INFO 20456 --- [http-nio-9192-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:36:07.842  INFO 20456 --- [http-nio-9192-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 22:36:07.974  INFO 20456 --- [http-nio-9192-exec-1] c.javatech.os.api.service.OrderService   : Order Service Request: {"order":{"id":1,"name":"book","qty":3,"price":1000.0},"payment":{"paymentId":null,"paymentStatus":null,"transactionId":null,"amount":1000.0,"orderId":1}}
+2022-04-13 22:36:08.188  INFO 27276 --- [http-nio-9191-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 22:36:08.189  INFO 27276 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 22:36:08.191  INFO 27276 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-13 22:36:08.230  INFO 27276 --- [http-nio-9191-exec-1] c.j.ps.api.service.PaymentService        : Boolean is false
+2022-04-13 22:36:08.233  INFO 27276 --- [http-nio-9191-exec-1] c.j.ps.api.service.PaymentService        : Payment Service Request: {"paymentId":null,"paymentStatus":"fail","transactionId":"bb8a8fd3-3f01-43c6-a938-3e5d5159ff7e","orderId":1,"amount":1000.0}
+2022-04-13 22:36:08.313  INFO 20456 --- [http-nio-9192-exec-1] c.javatech.os.api.service.OrderService   : Payment Service Response from Order Service Rest Call: {"paymentId":1,"paymentStatus":"fail","transactionId":"bb8a8fd3-3f01-43c6-a938-3e5d5159ff7e","amount":1000.0,"orderId":1}
+2022-04-13 22:36:19.294  INFO 27276 --- [http-nio-9191-exec-2] c.j.ps.api.service.PaymentService        : Payment Service findPaymentHistoryByOrderId: {"paymentId":1,"paymentStatus":"fail","transactionId":"bb8a8fd3-3f01-43c6-a938-3e5d5159ff7e","orderId":1,"amount":1000.0}
+2022-04-13 22:40:02.001  INFO 20456 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:40:12.156  INFO 27276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:45:02.005  INFO 20456 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:45:12.166  INFO 27276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:50:02.008  INFO 20456 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:50:12.173  INFO 27276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:55:02.018  INFO 20456 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 22:55:12.204  INFO 27276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:00:02.027  INFO 20456 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:00:12.218  INFO 27276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:05:02.031  INFO 20456 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:05:12.223  INFO 27276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:10:02.045  INFO 20456 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:10:12.226  INFO 27276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:15:02.047  INFO 20456 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:15:12.230  INFO 27276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:19:42.948  INFO 20456 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-SERVICE with eureka with status DOWN
+2022-04-13 23:19:42.949  INFO 20456 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649859582949, current=DOWN, previous=UP]
+2022-04-13 23:19:42.949  INFO 20456 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192: registering service...
+2022-04-13 23:19:42.960  INFO 20456 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - registration status: 204
+2022-04-13 23:19:43.050  WARN 20456 --- [SpringApplicationShutdownHook] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 23:19:43.050  INFO 20456 --- [SpringApplicationShutdownHook] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 23:19:43.055  INFO 20456 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 23:19:43.056  INFO 20456 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-13 23:19:43.064  INFO 20456 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-13 23:19:43.066  INFO 20456 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-13 23:19:43.067  INFO 20456 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-04-13 23:19:46.078  INFO 20456 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-04-13 23:19:46.082  INFO 20456 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - deregister  status: 200
+2022-04-13 23:19:46.145  INFO 20456 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-04-13 23:19:51.285  INFO 27276 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2022-04-13 23:19:51.285  INFO 27276 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649859591285, current=DOWN, previous=UP]
+2022-04-13 23:19:51.286  INFO 27276 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191: registering service...
+2022-04-13 23:19:51.294  INFO 27276 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191 - registration status: 204
+2022-04-13 23:19:51.393  WARN 27276 --- [SpringApplicationShutdownHook] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 23:19:51.393  INFO 27276 --- [SpringApplicationShutdownHook] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 23:19:51.397  INFO 27276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 23:19:51.398  INFO 27276 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-13 23:19:51.406  INFO 27276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-13 23:19:51.409  INFO 27276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-13 23:19:51.409  INFO 27276 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-04-13 23:19:54.427  INFO 27276 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-04-13 23:19:54.433  INFO 27276 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191 - deregister  status: 200
+2022-04-13 23:19:54.508  INFO 27276 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-04-13 23:20:16.718  INFO [ORDER-SERVICE,,] 28512 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-04-13 23:20:17.391  INFO [ORDER-SERVICE,,] 28512 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 23:20:17.392  INFO [ORDER-SERVICE,,] 28512 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/hyeonjun/cloud-config-server/file:C:\Users\wngus\AppData\Local\Temp\config-repo-8008916077673108299\application.yml'}]
+2022-04-13 23:20:17.417  INFO [ORDER-SERVICE,,] 28512 --- [main] c.j.os.api.OrderServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-13 23:20:17.440  INFO [ORDER-SERVICE,,] 28512 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:9196
+2022-04-13 23:20:17.441  INFO [ORDER-SERVICE,,] 28512 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 23:20:18.124  INFO [PAYMENT-SERVICE,,] 39332 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-04-13 23:20:18.290  INFO [ORDER-SERVICE,,] 28512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-13 23:20:18.380  INFO [ORDER-SERVICE,,] 28512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interfaces.
+2022-04-13 23:20:18.759  INFO [PAYMENT-SERVICE,,] 39332 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=PAYMENT-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 23:20:18.760  INFO [PAYMENT-SERVICE,,] 39332 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/hyeonjun/cloud-config-server/file:C:\Users\wngus\AppData\Local\Temp\config-repo-8008916077673108299\application.yml'}]
+2022-04-13 23:20:18.780  INFO [PAYMENT-SERVICE,,] 39332 --- [main] c.j.ps.api.PaymentServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-13 23:20:18.796  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:9196
+2022-04-13 23:20:18.796  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=PAYMENT-SERVICE, profiles=[default], label=null, version=67e8954aef76ed7f5b8e5683c00c4172aeaf56ab, state=null
+2022-04-13 23:20:18.855  INFO [ORDER-SERVICE,,] 28512 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7f053090-f9be-31a6-bac8-050512c4ea08
+2022-04-13 23:20:19.597  INFO [PAYMENT-SERVICE,,] 39332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-13 23:20:19.689  INFO [PAYMENT-SERVICE,,] 39332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2022-04-13 23:20:19.689  INFO [ORDER-SERVICE,,] 28512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9192 (http)
+2022-04-13 23:20:19.701  INFO [ORDER-SERVICE,,] 28512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 23:20:19.701  INFO [ORDER-SERVICE,,] 28512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-13 23:20:19.998  INFO [ORDER-SERVICE,,] 28512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 23:20:19.999  INFO [ORDER-SERVICE,,] 28512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2557 ms
+2022-04-13 23:20:20.062  INFO [ORDER-SERVICE,,] 28512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 23:20:20.177  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4618901f-7407-3d93-b45f-9b744284484c
+2022-04-13 23:20:20.219  INFO [ORDER-SERVICE,,] 28512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 23:20:20.233  INFO [ORDER-SERVICE,,] 28512 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-04-13 23:20:20.711  WARN [ORDER-SERVICE,,] 28512 --- [main] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2022-04-13 23:20:20.998  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2022-04-13 23:20:21.017  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 23:20:21.018  INFO [PAYMENT-SERVICE,,] 39332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-13 23:20:21.067  INFO [ORDER-SERVICE,,] 28512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-13 23:20:21.129  INFO [ORDER-SERVICE,,] 28512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-13 23:20:21.299  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 23:20:21.300  INFO [PAYMENT-SERVICE,,] 39332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2503 ms
+2022-04-13 23:20:21.315  INFO [ORDER-SERVICE,,] 28512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-13 23:20:21.378  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-13 23:20:21.450  INFO [ORDER-SERVICE,,] 28512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-13 23:20:21.501  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-13 23:20:21.519  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-04-13 23:20:21.962  WARN [PAYMENT-SERVICE,,] 39332 --- [main] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2022-04-13 23:20:22.139  INFO [ORDER-SERVICE,,] 28512 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-13 23:20:22.154  INFO [ORDER-SERVICE,,] 28512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 23:20:22.266  WARN [ORDER-SERVICE,,] 28512 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 23:20:22.267  INFO [ORDER-SERVICE,,] 28512 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 23:20:22.273  WARN [ORDER-SERVICE,,] 28512 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 23:20:22.273  INFO [ORDER-SERVICE,,] 28512 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 23:20:22.317  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-13 23:20:22.378  WARN [ORDER-SERVICE,,] 28512 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-13 23:20:22.380  INFO [PAYMENT-SERVICE,,] 39332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-13 23:20:22.547  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-13 23:20:22.695  INFO [PAYMENT-SERVICE,,] 39332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-13 23:20:23.414  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-13 23:20:23.425  INFO [PAYMENT-SERVICE,,] 39332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 23:20:23.960  WARN [PAYMENT-SERVICE,,] 39332 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 23:20:23.960  INFO [PAYMENT-SERVICE,,] 39332 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 23:20:23.966  WARN [PAYMENT-SERVICE,,] 39332 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-04-13 23:20:23.967  INFO [PAYMENT-SERVICE,,] 39332 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-13 23:20:24.091  WARN [PAYMENT-SERVICE,,] 39332 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-13 23:20:24.696  INFO [ORDER-SERVICE,,] 28512 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-04-13 23:20:26.062  INFO [PAYMENT-SERVICE,,] 39332 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-04-13 23:20:26.909  WARN [ORDER-SERVICE,,] 28512 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-04-13 23:20:27.145  INFO [ORDER-SERVICE,,] 28512 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-04-13 23:20:27.205  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-04-13 23:20:27.211  INFO [ORDER-SERVICE,,] 28512 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:20:27.243  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-04-13 23:20:27.243  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-04-13 23:20:27.243  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-04-13 23:20:27.243  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-04-13 23:20:27.244  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-04-13 23:20:27.244  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-04-13 23:20:27.244  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-04-13 23:20:27.531  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-04-13 23:20:27.537  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-04-13 23:20:27.544  INFO [ORDER-SERVICE,,] 28512 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-13 23:20:27.557  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1649859627555 with initial instances count: 2
+2022-04-13 23:20:27.575  INFO [ORDER-SERVICE,,] 28512 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2022-04-13 23:20:27.576  INFO [ORDER-SERVICE,,] 28512 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649859627576, current=UP, previous=STARTING]
+2022-04-13 23:20:27.579  INFO [ORDER-SERVICE,,] 28512 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192: registering service...
+2022-04-13 23:20:27.611  INFO [ORDER-SERVICE,,] 28512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9192 (http) with context path ''
+2022-04-13 23:20:27.612  INFO [ORDER-SERVICE,,] 28512 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9192
+2022-04-13 23:20:27.632  INFO [ORDER-SERVICE,,] 28512 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:ORDER-SERVICE:9192 - registration status: 204
+2022-04-13 23:20:28.193  WARN [PAYMENT-SERVICE,,] 39332 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-04-13 23:20:28.404  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-04-13 23:20:28.468  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-04-13 23:20:28.473  INFO [PAYMENT-SERVICE,,] 39332 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:20:28.508  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-04-13 23:20:28.508  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-04-13 23:20:28.509  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-04-13 23:20:28.509  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-04-13 23:20:28.509  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-04-13 23:20:28.509  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-04-13 23:20:28.509  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-04-13 23:20:28.612  INFO [ORDER-SERVICE,,] 28512 --- [main] c.j.os.api.OrderServiceApplication       : Started OrderServiceApplication in 17.532 seconds (JVM running for 19.726)
+2022-04-13 23:20:28.800  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-04-13 23:20:28.808  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-04-13 23:20:28.815  INFO [PAYMENT-SERVICE,,] 39332 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-13 23:20:28.829  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1649859628828 with initial instances count: 2
+2022-04-13 23:20:28.840  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2022-04-13 23:20:28.842  INFO [PAYMENT-SERVICE,,] 39332 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1649859628842, current=UP, previous=STARTING]
+2022-04-13 23:20:28.846  INFO [PAYMENT-SERVICE,,] 39332 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191: registering service...
+2022-04-13 23:20:28.902  INFO [PAYMENT-SERVICE,,] 39332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2022-04-13 23:20:28.908  INFO [PAYMENT-SERVICE,,] 39332 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2022-04-13 23:20:28.943  INFO [PAYMENT-SERVICE,,] 39332 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/host.docker.internal:PAYMENT-SERVICE:9191 - registration status: 204
+2022-04-13 23:20:29.769  INFO [PAYMENT-SERVICE,,] 39332 --- [main] c.j.ps.api.PaymentServiceApplication     : Started PaymentServiceApplication in 16.566 seconds (JVM running for 18.728)
+2022-04-13 23:21:06.346  INFO [ORDER-SERVICE,3e111f90bb6008ef,3e111f90bb6008ef] 28512 --- [http-nio-9192-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 23:21:06.347  INFO [ORDER-SERVICE,3e111f90bb6008ef,3e111f90bb6008ef] 28512 --- [http-nio-9192-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 23:21:06.349  INFO [ORDER-SERVICE,3e111f90bb6008ef,3e111f90bb6008ef] 28512 --- [http-nio-9192-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-13 23:21:06.505  INFO [ORDER-SERVICE,3e111f90bb6008ef,3e111f90bb6008ef] 28512 --- [http-nio-9192-exec-1] c.javatech.os.api.service.OrderService   : Order Service Request: {"order":{"id":1,"name":"book","qty":3,"price":1000.0},"payment":{"paymentId":null,"paymentStatus":null,"transactionId":null,"amount":1000.0,"orderId":1}}
+2022-04-13 23:21:06.704  INFO [PAYMENT-SERVICE,3e111f90bb6008ef,ecf190b50eb2bda9] 39332 --- [http-nio-9191-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 23:21:06.704  INFO [PAYMENT-SERVICE,3e111f90bb6008ef,ecf190b50eb2bda9] 39332 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 23:21:06.705  INFO [PAYMENT-SERVICE,3e111f90bb6008ef,ecf190b50eb2bda9] 39332 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-13 23:21:06.749  INFO [PAYMENT-SERVICE,3e111f90bb6008ef,ecf190b50eb2bda9] 39332 --- [http-nio-9191-exec-1] c.j.ps.api.service.PaymentService        : Boolean is false
+2022-04-13 23:21:06.752  INFO [PAYMENT-SERVICE,3e111f90bb6008ef,ecf190b50eb2bda9] 39332 --- [http-nio-9191-exec-1] c.j.ps.api.service.PaymentService        : Payment Service Request: {"paymentId":null,"paymentStatus":"fail","transactionId":"d92be9d4-406f-42bb-8f9b-899514bb4f61","orderId":1,"amount":1000.0}
+2022-04-13 23:21:06.851  INFO [ORDER-SERVICE,3e111f90bb6008ef,3e111f90bb6008ef] 28512 --- [http-nio-9192-exec-1] c.javatech.os.api.service.OrderService   : Payment Service Response from Order Service Rest Call: {"paymentId":1,"paymentStatus":"fail","transactionId":"d92be9d4-406f-42bb-8f9b-899514bb4f61","amount":1000.0,"orderId":1}
+2022-04-13 23:25:27.256  INFO [ORDER-SERVICE,,] 28512 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-04-13 23:25:28.520  INFO [PAYMENT-SERVICE,,] 39332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

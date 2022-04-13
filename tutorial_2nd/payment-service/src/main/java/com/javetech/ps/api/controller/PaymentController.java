@@ -1,5 +1,6 @@
 package com.javetech.ps.api.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.javetech.ps.api.entity.Payment;
 import com.javetech.ps.api.service.PaymentService;
 import lombok.RequiredArgsConstructor;
@@ -17,12 +18,12 @@ public class PaymentController {
     private final PaymentService service;
 
     @PostMapping("/do-payment")
-    public Payment doPayment(@RequestBody Payment payment) {
+    public Payment doPayment(@RequestBody Payment payment) throws JsonProcessingException {
         return service.doPayment(payment);
     }
 
     @GetMapping("/{orderId}")
-    public Payment findPaymentHistoryByOrderId(@PathVariable Integer orderId) {
+    public Payment findPaymentHistoryByOrderId(@PathVariable Integer orderId) throws JsonProcessingException {
         return service.findPaymentHistoryByOrderId(orderId);
     }
 }
